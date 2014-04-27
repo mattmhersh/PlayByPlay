@@ -11,21 +11,32 @@
         <div class="row">
             <div class="col-md-6" ng-repeat="flight in flights">
                 <div class="flightCard">
-                    <h3>{{ flight.airline }}</h3>
                     <div>
-                        <span>Price: {{ flight.price | currency}}</span> <br />
-                        <span>Duration: {{ flight.totalDuration }} hours</span>
+                        <h3>{{ flight.airline }}</h3>                        
+                    </div>                    
+                    <div>
+                        <span><strong>Price:</strong> {{ flight.price | currency}}</span> <br />
+                        <span><strong>Duration:</strong> {{ flight.totalDuration }} hours</span>
                     </div>
-                    <hr />
                     <div>
-                        <span>Start Time: {{ flight.startTime }} </span>
-                        <span>End Time: {{ flight.endTime }}</span>
-                        <ul class="breadcrumb">
+                        <span><strong>Start Time:</strong> {{ flight.startTime }} </span> <br />
+                        <span><strong>End Time:</strong> {{ flight.endTime }}</span><br /><br/>
+                        <ul class="breadcrumb">                            
+                            <li>
+                                <strong>Cities:</strong>
+                            </li>
                             <li ng-repeat="city in flight.cities">
                                 {{ city }}
                             </li>
                         </ul>
                     </div>
+                    <div class="pull-right">
+                        <span class="btn btn-success">
+                            <span class="glyphicon glyphicon-ok"></span>
+                            Select
+                        </span>
+                    </div>
+                    <br /><br/>
                 </div>
             </div>
         </div>
