@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Web.Http;
+using PlayByPlay.AppStart;
 
 namespace PlayByPlay
 {
@@ -7,7 +9,7 @@ namespace PlayByPlay
 
         protected void Application_Start(object sender, EventArgs e)
         {
-
+            GlobalConfiguration.Configure(WebApiConfig.Register);
         }
 
         protected void Session_Start(object sender, EventArgs e)
