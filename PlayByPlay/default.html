@@ -5,11 +5,11 @@
     <link href="Content/bootstrap.css" rel="stylesheet" />    
     <link href="Content/site.css" rel="stylesheet" />
 </head>
-<body ng-app="airlineApp">
-    <div class="container" ng-controller="flightsController">
+<body data-ng-app="airlineApp">
+    <div class="container" data-ng-controller="flightsController">
         <h1>Airlines</h1>
         <div class="row">
-            <div class="col-md-6" ng-repeat="flight in flights">
+            <div class="col-md-6" data-ng-repeat="flight in flights">
                 <div class="flightCard">
                     <div class="approvedFlight">
                         <h3>{{ flight.airline }}</h3>                        
@@ -25,13 +25,13 @@
                             <li>
                                 <strong>Cities:</strong>
                             </li>
-                            <li ng-repeat="city in flight.cities">
+                            <li data-ng-repeat="city in flight.cities">
                                 {{ city }}
                             </li>
                         </ul>
                     </div>
                     <div class="pull-right">
-                        <span ng-class="{ btn: true, 'btn-default': !flight.approved, 'btn-success': flight.approved}" ng-click="selectFlight(flight)">
+                        <span data-ng-class="{ btn: true, 'btn-default': !flight.approved, 'btn-success': flight.approved}" data-ng-click="selectFlight(flight)">
                             <span class="glyphicon glyphicon-ok"></span>
                             Select
                         </span>
