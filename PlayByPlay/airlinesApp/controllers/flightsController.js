@@ -2,6 +2,13 @@
 
     var flightsController = function ($scope) {
 
+        $scope.selectFlight = function (flight) {
+            for (var f in $scope.flights) {
+                $scope.flights[f].approved = false;
+            }
+            flight.approved = !flight.approved;
+        };
+
         $scope.flights =
                 [
                     {

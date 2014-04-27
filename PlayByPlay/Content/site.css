@@ -8,3 +8,7 @@
     margin: 5px;
     padding: 10px;    
 }
+
+.approvedFlight {
+    background-color: #5cb85c;
+}
