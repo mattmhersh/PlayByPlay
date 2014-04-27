@@ -8,6 +8,8 @@ namespace PlayByPlay.AppStart
         {
             config.MapHttpAttributeRoutes();
 
+            var formatter = config.Formatters.JsonFormatter;
+
             config.Routes.MapHttpRoute(
                 name: "DefaultApi", 
                 routeTemplate: "api/{controller}/{id}", 
