@@ -8,6 +8,11 @@
 <body data-ng-app="airlineApp">
     <div class="container" data-ng-controller="flightsController">
         <h1>Airlines</h1>
+        <div>
+            <div class="alert alert-success" data-ng-show="status">
+                {{ status }}                
+            </div>
+        </div>
         <div class="row">
             <div class="col-md-6" data-ng-repeat="flight in flights">
                 <div class="flightCard">

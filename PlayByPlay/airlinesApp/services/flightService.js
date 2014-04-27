@@ -29,8 +29,11 @@
         flightFactory.getFlights = function() {
             return testData;
         };
-        flightFactory.selectFlight = function() {
-
+        flightFactory.selectFlight = function(id) {
+            //
+            // $http.put("/flights/select/3", id);
+            //
+            return true;
         };
         return flightFactory;
     };
