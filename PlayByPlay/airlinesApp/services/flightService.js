@@ -1,5 +1,5 @@
 ﻿(function(app) {
-    var flightService = function() {
+    var flightService = function($http) {
         var testData = [
             {
                 airline: "United Airlines",
@@ -25,9 +25,12 @@
             }
         ];
 
+        var baseUrl = "/api/flights"
+
         var flightFactory = {};
         flightFactory.getFlights = function() {
-            return testData;
+            //return testData;
+            return $http.get(baseUrl);
         };
         flightFactory.selectFlight = function(id) {
             //
@@ -38,6 +41,6 @@
         return flightFactory;
     };
 
-    app.factory("flightService", flightService);
+    app.factory("flightService", ["$http", flightService]);
 
 }(angular.module("airlineApp")));

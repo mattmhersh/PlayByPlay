@@ -1,7 +1,6 @@
 c:\develop\learning\PlayByPlay\PlayByPlay\bin\PlayByPlay.dll.config
 c:\develop\learning\PlayByPlay\PlayByPlay\bin\PlayByPlay.dll
 c:\develop\learning\PlayByPlay\PlayByPlay\bin\PlayByPlay.pdb
-c:\develop\learning\PlayByPlay\PlayByPlay\obj\Debug\PlayByPlay.csprojResolveAssemblyReference.cache
 c:\develop\learning\PlayByPlay\PlayByPlay\obj\Debug\PlayByPlay.dll
 c:\develop\learning\PlayByPlay\PlayByPlay\obj\Debug\PlayByPlay.pdb
 c:\develop\learning\PlayByPlay\PlayByPlay\bin\Newtonsoft.Json.dll

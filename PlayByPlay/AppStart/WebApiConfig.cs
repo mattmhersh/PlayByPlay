@@ -1,4 +1,6 @@
 using System.Web.Http;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
 
 namespace PlayByPlay.AppStart
 {
@@ -8,7 +10,11 @@ namespace PlayByPlay.AppStart
         {
             config.MapHttpAttributeRoutes();
 
-            var formatter = config.Formatters.JsonFormatter;
+            var formatters = GlobalConfiguration.Configuration.Formatters;
+            var jsonFormatter = formatters.JsonFormatter;
+            var settings = jsonFormatter.SerializerSettings;
+            settings.Formatting = Formatting.Indented;
+            settings.ContractResolver = new CamelCasePropertyNamesContractResolver();
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi", 
