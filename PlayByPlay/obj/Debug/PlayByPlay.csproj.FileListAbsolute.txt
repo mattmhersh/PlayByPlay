@@ -11,3 +11,8 @@ c:\develop\learning\PlayByPlay\PlayByPlay\bin\Newtonsoft.Json.xml
 c:\develop\learning\PlayByPlay\PlayByPlay\bin\System.Net.Http.Formatting.xml
 c:\develop\learning\PlayByPlay\PlayByPlay\bin\System.Web.Http.xml
 c:\develop\learning\PlayByPlay\PlayByPlay\bin\System.Web.Http.WebHost.xml
+c:\develop\learning\PlayByPlay\PlayByPlay\bin\EntityFramework.dll
+c:\develop\learning\PlayByPlay\PlayByPlay\bin\EntityFramework.SqlServer.dll
+c:\develop\learning\PlayByPlay\PlayByPlay\bin\EntityFramework.xml
+c:\develop\learning\PlayByPlay\PlayByPlay\bin\EntityFramework.SqlServer.xml
+c:\develop\learning\PlayByPlay\PlayByPlay\obj\Debug\PlayByPlay.csprojResolveAssemblyReference.cache

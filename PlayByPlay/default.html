@@ -5,28 +5,28 @@
     <link href="Content/bootstrap.css" rel="stylesheet" />    
     <link href="Content/site.css" rel="stylesheet" />
 </head>
-<body data-ng-app="airlineApp">
-    <div class="container" data-ng-controller="flightsController">
+<body data-ng-app="airlineApp" >
+    <div class="container" data-ng-controller="flightsController" ng-cloak>
         <h1>Airlines</h1>
         <div>
             <div class="alert alert-success" data-ng-show="status">
-                {{ status }}                
+                {{ status }}
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6" data-ng-repeat="flight in flights">
+            <div class="col-md-6" data-ng-repeat="flight in flights" data-ng-show="flights">
                 <div class="flightCard">
                     <div class="approvedFlight">
-                        <h3>{{ flight.airline }}</h3>                        
-                    </div>                    
+                        <h3>{{ flight.airline }}</h3>
+                    </div>
                     <div>
                         <span><strong>Price:</strong> {{ flight.price | currency}}</span> <br />
                         <span><strong>Duration:</strong> {{ flight.totalDuration }} hours</span>
                     </div>
                     <div>
-                        <span><strong>Start Time:</strong> {{ flight.startTime | date }} </span> <br />
-                        <span><strong>End Time:</strong> {{ flight.endTime | date }}</span><br /><br/>
-                        <ul class="breadcrumb">                            
+                        <span><strong>Start Time:</strong> {{ flight.startTime | date:'hh:mm' }} </span> <br />
+                        <span><strong>End Time:</strong> {{ flight.endTime | date:'hh:mm' }}</span><br /><br />
+                        <ul class="breadcrumb">
                             <li>
                                 <strong>Cities:</strong>
                             </li>
@@ -41,7 +41,7 @@
                             Select
                         </span>
                     </div>
-                    <br /><br/>
+                    <br /><br />
                 </div>
             </div>
         </div>
@@ -50,8 +50,8 @@
     <script src="scripts/jquery-1.9.1.min.js"></script>
     <script src="scripts/angular.js"></script>
 
-    <script src="airlinesApp/airlineApp.js"></script>    
-    <script src="airlinesApp/controllers/flightsController.js"></script>    
+    <script src="airlinesApp/airlineApp.js"></script>
+    <script src="airlinesApp/controllers/flightsController.js"></script>
     <script src="airlinesApp/services/flightService.js"></script>
 </body>
 </html>

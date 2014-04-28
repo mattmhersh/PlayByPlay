@@ -12,3 +12,7 @@
 .approvedFlight {
     background-color: #5cb85c;
 }
+
+[ng\:cloak], [ng-cloak], .ng-cloak {
+    display: none;
+}
