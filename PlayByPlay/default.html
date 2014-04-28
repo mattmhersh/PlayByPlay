@@ -24,8 +24,8 @@
                         <span><strong>Duration:</strong> {{ flight.totalDuration }} hours</span>
                     </div>
                     <div>
-                        <span><strong>Start Time:</strong> {{ flight.startTime }} </span> <br />
-                        <span><strong>End Time:</strong> {{ flight.endTime }}</span><br /><br/>
+                        <span><strong>Start Time:</strong> {{ flight.startTime | date }} </span> <br />
+                        <span><strong>End Time:</strong> {{ flight.endTime | date }}</span><br /><br/>
                         <ul class="breadcrumb">                            
                             <li>
                                 <strong>Cities:</strong>
